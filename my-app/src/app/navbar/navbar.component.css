@@ -2,3 +2,21 @@
     background-color: rgba(217, 217, 217, 1);
 }
 
+.navbar-brand{
+    margin-bottom: auto;
+}
+
+.navbar-nav{
+       margin-left: 600px;
+       
+}
+.navbar-nav a{
+    color: black;
+    
+}
+
+.navbar-nav a:hover{
+    color: purple;
+    transition: ease-in 0.5s;
+    
+}
