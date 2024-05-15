@@ -1,6 +1,31 @@
 <div class="hola">
-    <p>central works!</p>
-
-    
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#ID</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">Ubicacion</th>
+            <th scope="col">Superficie</th>
+            <th scope="col">Fecha_Deforestacion</th>
+            <th scope="col">Causas</th>
+            <th scope="col">Impactos_Ambientales</th>
+          </tr>
+        </thead>
+        <tbody>
+            @for (zona of Zonas; track zona.id) {
+                <tr>
+                    <th scope="row">{{zona.id }}</th>
+                    <td>{{zona.nombre}}</td>
+                    <td>{{zona.ubicacion}}</td>
+                    <td>{{zona.superficie}}</td>
+                    <td>{{zona.FechaDeforestacion | date:'yyyy/MM/dd hh:mm a'}}</td>
+                    <td>{{zona.causas}}</td>
+                    <td>{{zona.impactosambientales}}</td>
+                  </tr>
+        
+            }
+             
+        </tbody>
+      </table>
 </div>
 
